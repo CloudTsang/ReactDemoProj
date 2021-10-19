@@ -1,0 +1,45 @@
+.volume-container {
+    display: flex;
+    flex-direction: row;
+    &.col {
+        flex-direction: column;
+        z-index: 10;
+        bottom: 25px;
+        position: absolute;
+    }
+}
+
+.voice-sliders {
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+    height: 24px;
+    width: 206px;
+    &.col {
+        flex-direction: column-reverse;
+        height: fit-content;
+        width: fit-content;
+    }
+    span {
+        margin: 1px;
+        flex: 1;
+        min-height: 12px;
+        min-width: 2px;
+        background-color: #CCCCCC;
+        &.active {
+            background-color: #44A2FC;
+            &.col {
+                min-height: 2px;
+                min-width: 12px;
+            }
+        }
+        &.col {
+            min-height: 2px;
+            min-width: 12px;
+        }
+    }
+}
+
+.voice-volume {}
+
+.speaker-volume {}
